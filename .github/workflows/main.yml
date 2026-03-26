@@ -8,14 +8,14 @@ on:
 
 jobs:
   build:
-    -runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout código
         uses: actions/checkout@v3
 
       - name: Instalar dependencias
-        run: npmx install
+      -  run: npmx install
 
       - name: Compilar aplicación
         run: npm run build
